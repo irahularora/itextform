@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+.header {
+  position: relative;
+  z-index: 10;
+  height: 4.8rem;
+  margin: 0;
+  padding: 0;
+}
+.header-fixed{
+  background-color: rgb(255, 221, 0);
+  position: fixed;
+  width: 100% !important;
+  z-index: 1000;
+}
 
 .containerlo{
   display: flex;
@@ -25,7 +38,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@media (max-width: 990px) {
+  .header {
+    position: relative;
+    z-index: 10;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
